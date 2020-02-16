@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head -->
+<head>
+<title>eRestaurant</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+
+<!-- header  -->
+<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+<link rel="stylesheet" href="css/headerstyle.css"> <!-- Resource style -->
+<script src="js/modernizr.js"></script> <!-- Modernizr -->
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+<!-- //header -->
+
+<!-- Default-JavaScript-File -->
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+<!-- //Default-JavaScript-File -->
+
+	<link rel="stylesheet" href="css/easy-responsive-tabs.css"><!-- easy responsive tabs css -->
+
+	<!-- <link rel="stylesheet" href="css/jquery-ui.css" type="text/css" media="all"> --><!-- date-picker css-->
+
+<!-- gallery -->
+	<link href="css/lsb.css" rel="stylesheet" type="text/css">
+<!-- //gallery -->
+
+<!-- banner text effect css files -->
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/style3.css" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+<!-- banner text effect css files -->
+
+	
+<!-- default css files -->
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/copy.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+<!-- default css files -->
+	
+	<!-- tab -->
+	<link href="tab_style.css" rel="stylesheet">
+	<!-- tab -->
+<!--web font-->
+	
+
+<!--//web font-->
+	
+<!-- scrolling script -->
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script> 
+<!-- //scrolling script -->
+
+</head>
+
+<!-- Body -->
+<body>
+	<!-- Header -->
+	<header>
+		<nav class="cd-stretchy-nav">
+			<a class="cd-nav-trigger" href="#0">
+				<span aria-hidden="true"></span>
+			</a>
+
+			<ul>
+				<li><a href="#" class="active"><span>Home</span></a></li>
+				<li><a href="#menu"><span>MENU</span></a></li>
+				<li><a href="#gallery"><span>GALLERY</span></a></li>
+				<li><a href="#services"><span>SERVICES </span></a></li>
+				<li><a href="#contact"><span>CONTACT</span></a></li>
+			</ul>
+			<span aria-hidden="true" class="stretchy-nav-bg"></span>
+		</nav>	
+	</header>
+	<!-- //Header -->
+	<!-- banner -->
+		<div class="banner jarallax">
+			<div class="agileinfo-dot">
+				<div class="header-center">
+					<div class="logo grid__item">
+						<a href="#"><img src="images/logo.png"></a>
+					</div>
+				</div>
+				<div class="agileits-banner-info">
+					<h3>welcome to <span style="color: red">E Restaurant</span></h3>
+		
+						<h2 class="rw-sentence">
+						<span>Food tastes better, eat with your </span>
+						<div class="rw-words rw-words-1">
+							<span>Family</span>
+							<span>Friends</span>
+							<span>happiness</span>
+							<span>Love</span>
+							<span>Gratefulness</span>
+							<span>happiness</span>
+						</div>
+						</h2>					
+						<a href="#" data-toggle="modal" data-target="#myModal2">Book Your Table</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- //banner -->
+
+
+		<!-- popup for sign up form -->
+
+		<div class="modal video-modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModal2">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div id="small-dialog2" class="mfp-hide book-form">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h3>Book A Table Now</h3>
+							<form action="#" method="post">
+								<input type="text" name="Name" placeholder="Reservation Name" required=""/>
+								<input type="tel" name="number" placeholder="Mobile Number" required=""/>
+								<input type="email" name="Email" class="email" placeholder="Email" required=""/>
+								<div class="select-block">
+									<select required="">
+										<option value="">Number Of Guests</option>
+										<option value="">1 Guest</option>
+										<option value="">2 Guests</option>
+										<option value="">3 Guests</option>
+										<option value="">4 Guests</option>
+										<option value="">5 Guests</option>
+										<option value="">More Than 5</option>
+									</select>
+								</div>
+								<input class="date" type="text" id="datepicker2"  name="datepicker2" placeholder="Date Of Arrival" title="Please enter your Arrival Date " required=""/>
+								<textarea name="Message" placeholder="Additional Information (Optional)" ></textarea>
+								<input type="submit" value="Book table">
+							</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //popup for sign up form -->
+
+		<!-- order modal -->
+		<div class="modal about-modal fade" id="myModal3" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header"> 
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+							<h4 class="modal-title">eRestaurant</h4>
+							<h5></h5>
+						</div> 
+						<div class="modal-body">
+						<div class="agileits-w3layouts-info">
+							<img src="images/s1.jpg" alt="" />
+							<p>Morbi eget mollis erat, sit amet feugiat nulla. In hac habitasse platea dictumst. Sed ac fermentum eros. Pellentesque tincidunt nisi sit amet dui lobortis, pulvinar pellentesque dui tempor. Sed iaculis, nisl a eleifend porttitor, diam mauris gravida arcu, suscipit ullamcorper nulla diam vitae lorem..</p>
+							
+								<div class="modal-footer">
+									<a href="modal.html"><button type="button" style="margin-right: 398px;"> Confirm</button></a>
+	          						<button type="button" class="btn btn-default" data-dismiss="modal">Close </button>
+	        					</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- //order modal -->
+		
+
+
+
+<!-- Start tab -->
+	<div id="menu" class="horizontal">
+		<div class="container">
+			<div class="menu-heading">
+				<h3>THE MENU</h3>
+			</div>
+			<div id="tabs">
+				<ul class="tab">
+					<li><a href="#tabs-1">Brackfast</a></li>
+					<li><a href="#tabs-2">Meal</a></li>
+					<li><a href="#tabs-3">Fastfood</a></li>
+					<li><a href="#tabs-4">Drink</a></li>
+				</ul>
+				<div class="row">
+					<div id="tabs-1">
+						<div class="bt1 col-md-6">
+							<ul class="tb-list">
+								<li>Chicken Cream Pasta <spane class="taka"> 130.00/-</spane>
+									<p>Pasta toased into a buttery sauce and chicken.</p>
+									<div class="tb-btn">
+										<a href="#myModal3" data-toggle="modal">
+											<h4 class="bt-title">order</h4>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="tb1.1 col-md-6">
+							<ul class="tb-list">
+								<li>Chicken Cream Pasta <spane class="taka"> 130.00/-</spane>
+									<p>Pasta toased into a buttery sauce and chicken.</p>
+									<div class="tb-btn">
+										<a href="#myModal3" data-toggle="modal">
+											<h4 class="bt-title">order</h4>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="bt1 col-md-6">
+							<ul class="tb-list">
+								<li>Chicken Cream Pasta <spane class="taka"> 130.00/-</spane>
+									<p>Pasta toased into a buttery sauce and chicken.</p>
+									<div class="tb-btn">
+										<a href="#myModal3" data-toggle="modal">
+											<h4 class="bt-title">order</h4>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="tb1.1 col-md-6">
+							<ul class="tb-list">
+								<li>Chicken Cream Pasta <spane class="taka"> 130.00/-</spane>
+									<p>Pasta toased into a buttery sauce and chicken.</p>
+									<div class="tb-btn">
+										<a href="#myModal3" data-toggle="modal">
+											<h4 class="bt-title">order</h4>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				
+
+					<div id="tabs-2">
+						<div class="bt1 col-md-6">
+							<ul class="tb-list">
+								<li>Chicken Cream Pasta <spane class="taka"> 130.00/-</spane>
+									<p>Pasta toased into a buttery sauce and chicken.</p>
+									<div class="tb-btn">
+										<a href="#myModal3" data-toggle="modal">
+											<h4 class="bt-title">order</h4>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="tb1.1 col-md-6">
+							<ul class="tb-list">
+								<li>Chicken Cream Pasta <spane class="taka"> 130.00/-</spane>
+									<p>Pasta toased into a buttery sauce and chicken.</p>
+									<div class="tb-btn">
+										<a href="#myModal3" data-toggle="modal">
+											<h4 class="bt-title">order</h4>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="bt1 col-md-6">
+							<ul class="tb-list">
+								<li>Chicken Cream Pasta <spane class="taka"> 130.00/-</spane>
+									<p>Pasta toased into a buttery sauce and chicken.</p>
+									<div class="tb-btn">
+										<a href="#myModal3" data-toggle="modal">
+											<h4 class="bt-title">order</h4>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="tb1.1 col-md-6">
+							<ul class="tb-list">
+								<li>Chicken Cream Pasta <spane class="taka"> 130.00/-</spane>
+									<p>Pasta toased into a buttery sauce and chicken.</p>
+									<div class="tb-btn">
+										<a href="#myModal3" data-toggle="modal">
+											<h4 class="bt-title">order</h4>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div id="tabs-3">
+						<div class="bt1 col-md-6">
+							<ul class="tb-list">
+								<li>Chicken Cream Pasta <spane class="taka"> 130.00/-</spane>
+									<p>Pasta toased into a buttery sauce and chicken.</p>
+									<div class="tb-btn">
+										<a href="#myModal3" data-toggle="modal">
+											<h4 class="bt-title">order</h4>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="tb1.1 col-md-6">
+							<ul class="tb-list">
+								<li>Chicken Cream Pasta <spane class="taka"> 130.00/-</spane>
+									<p>Pasta toased into a buttery sauce and chicken.</p>
+									<div class="tb-btn">
+										<a href="#myModal3" data-toggle="modal">
+											<h4 class="bt-title">order</h4>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="bt1 col-md-6">
+							<ul class="tb-list">
+								<li>Chicken Cream Pasta <spane class="taka"> 130.00/-</spane>
+									<p>Pasta toased into a buttery sauce and chicken.</p>
+									<div class="tb-btn">
+										<a href="#myModal3" data-toggle="modal">
+											<h4 class="bt-title">order</h4>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="tb1.1 col-md-6">
+							<ul class="tb-list">
+								<li>Chicken Cream Pasta <spane class="taka"> 130.00/-</spane>
+									<p>Pasta toased into a buttery sauce and chicken.</p>
+									<div class="tb-btn">
+										<a href="#myModal3" data-toggle="modal">
+											<h4 class="bt-title">order</h4>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div id="tabs-4">
+						<div class="tb-border col-md-3">
+							<ul class="tb-list">
+								<li>Sodas<spane class="taka-4"> 13.00/-</spane>
+									<p>Coca cola, Pepsi,Sprite, Fanta</p>
+									<div class="tb-btn">
+										<a href="#myModal3" data-toggle="modal">
+											<h4 class="bt-title">order</h4>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="tb-border col-md-3">
+							<ul class="tb-list">
+								<li>Coffee<spane class="taka-4">50.00/-</spane>
+									<p>Black, Cappuccino, Cold & Hot</p>
+									<div class="tb-btn">
+										<a href="#myModal3" data-toggle="modal">
+											<h4 class="bt-title">order</h4>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="tb-border col-md-3">
+							<ul class="tb-list">
+								<li>Juices<spane class="taka-4">120.00/-</spane>
+									<p>Orange, Apple, Strawberry, Blackberry</p>
+									<div class="tb-btn">
+										<a href="#myModal3" data-toggle="modal">
+											<h4 class="bt-title">order</h4>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="col-md-3">
+							<ul class="tb-list">
+								<li>Water<spane class="taka-4">15.00/-</spane>
+									<p>Tap, Cold, Normal, Filter</p>
+									<div class="tb-btn">
+										<a href="#myModal3" data-toggle="modal">
+											<h4 class="bt-title">order</h4>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<script src="external/jquery/jquery.js"></script>
+				<script src="jquery-ui-tab.js"></script>
+				<script>
+					$( "#tabs" ).tabs();
+				</script>
+			</div>
+		</div>
+	</div>
+<!-- End tab -->
+
+
+		<!-- gallery -->
+		<div class="gallery" id="gallery">
+			<div class="gallery-head">
+				<h3>Food Gallery</h3>
+			</div>
+				<div class="gallery_grids">	
+					<div class="col-md-3 gallery_grid">
+						<a href="images/p1.jpg" class="lsb-preview" data-lsb-group="header">
+							<div class="w3layouts_news_grid">
+								<img src="images/p1.jpg" alt=" " class="img-responsive">
+								<div class="w3layouts_news_grid_pos">
+									<div class="wthree_text"><h3>Butter pizza</h3></div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 gallery_grid">
+						<a href="images/p2.jpg" class="lsb-preview" data-lsb-group="header">
+							<div class="w3layouts_news_grid">
+								<img src="images/p2.jpg" alt=" " class="img-responsive">
+								<div class="w3layouts_news_grid_pos">
+									<div class="wthree_text"><h3>Pasta</h3></div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 gallery_grid">
+						<a href="images/p13.jpg" class="lsb-preview" data-lsb-group="header">
+							<div class="w3layouts_news_grid">
+								<img src="images/p13.jpg" alt=" " class="img-responsive">
+								<div class="w3layouts_news_grid_pos">
+									<div class="wthree_text"><h3>Lemon cheese</h3></div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 gallery_grid">
+						<a href="images/p4.jpg" class="lsb-preview" data-lsb-group="header">
+							<div class="w3layouts_news_grid">
+								<img src="images/p4.jpg" alt=" " class="img-responsive">
+								<div class="w3layouts_news_grid_pos">
+									<div class="wthree_text"><h3>Toasted puff</h3></div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 gallery_grid">
+						<a href="images/p6.jpg" class="lsb-preview" data-lsb-group="header">
+							<div class="w3layouts_news_grid">
+								<img src="images/p6.jpg" alt=" " class="img-responsive">
+								<div class="w3layouts_news_grid_pos">
+									<div class="wthree_text"><h3>Burger Cheese</h3></div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 gallery_grid">
+						<a href="images/p5.jpg" class="lsb-preview" data-lsb-group="header">
+							<div class="w3layouts_news_grid">
+								<img src="images/p5.jpg" alt=" " class="img-responsive">
+								<div class="w3layouts_news_grid_pos">
+									<div class="wthree_text"><h3>fried broccoli</h3></div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 gallery_grid">
+						<a href="images/p7.jpg" class="lsb-preview" data-lsb-group="header">
+							<div class="w3layouts_news_grid">
+								<img src="images/p7.jpg" alt=" " class="img-responsive">
+								<div class="w3layouts_news_grid_pos">
+									<div class="wthree_text"><h3>Apple almond salad</h3></div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 gallery_grid">
+						<a href="images/p8.jpg" class="lsb-preview" data-lsb-group="header">
+							<div class="w3layouts_news_grid">
+								<img src="images/p8.jpg" alt=" " class="img-responsive">
+								<div class="w3layouts_news_grid_pos">
+									<div class="wthree_text"><h3>Roasted meat</h3></div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 gallery_grid">
+						<a href="images/p9.jpg" class="lsb-preview" data-lsb-group="header">
+							<div class="w3layouts_news_grid">
+								<img src="images/p9.jpg" alt=" " class="img-responsive">
+								<div class="w3layouts_news_grid_pos">
+									<div class="wthree_text"><h3>Pasta rolls</h3></div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 gallery_grid">
+						<a href="images/p10.jpg" class="lsb-preview" data-lsb-group="header">
+							<div class="w3layouts_news_grid">
+								<img src="images/p10.jpg" alt=" " class="img-responsive">
+								<div class="w3layouts_news_grid_pos">
+									<div class="wthree_text"><h3>fruits</h3></div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 gallery_grid">
+						<a href="images/p11.jpg" class="lsb-preview" data-lsb-group="header">
+							<div class="w3layouts_news_grid">
+								<img src="images/p11.jpg" alt=" " class="img-responsive">
+								<div class="w3layouts_news_grid_pos">
+									<div class="wthree_text"><h3>Meat Pizza</h3></div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 gallery_grid">
+						<a href="images/p12.jpg" class="lsb-preview" data-lsb-group="header">
+							<div class="w3layouts_news_grid">
+								<img src="images/p12.jpg" alt=" " class="img-responsive">
+								<div class="w3layouts_news_grid_pos">
+									<div class="wthree_text"><h3>Boiled eggs</h3></div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+		</div>
+		<!-- //gallery -->
+		<!-- gallery js -->
+			<script src="js/lsb.min.js"></script>
+			<script>
+			$(window).load(function() {
+				  $.fn.lightspeedBox();
+				});
+			</script>
+		<!-- //gallery js -->
+
+
+
+	<!-- customer -->
+		<div class="customer jarallax" id="customer">
+		    <div class="agileinfo-dot">
+				<div class="container">
+					<h3>Customer Says</h3>
+
+					<form action="#">
+						<table>
+							<tr>
+								<td><input type="text" name="First Name" placeholder="Name" required="">
+									<input type="text" name="Email" placeholder="Email" required="">
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<textarea name="Message" placeholder="Say Sumthing" required=""></textarea>
+								</td>
+							</tr>
+							<tr>
+								<td><input type="submit" value="Send As Review"></td>
+							</tr>
+						</table>
+					</form>
+
+						
+							
+						 
+				<div class="customer-grids">
+					<ul id="flexiselDemo1">			
+						<li>
+							<div class="customer-grid">
+								<p> Cras aliquam ligula id felis rhoncus facilisis. Pellentesque habitant 
+									morbi tristique senectus et netus et malesuada fames ac turpis egestas.  
+									Donec auctor magna id purus lacinia hendrerit.</p>
+								<h4>David Elton <span>Daily customer</span></h4>
+							</div>
+							<!-- <div class="client-img">
+								<img src="images/t1.jpg" alt="" />
+							</div> -->
+						</li>
+						<li>
+							<div class="customer-grid">
+								<p> Cras aliquam ligula id felis rhoncus facilisis. Pellentesque habitant 
+									morbi tristique senectus et netus et malesuada fames ac turpis egestas.  
+									Donec auctor magna id purus lacinia hendrerit.</p>
+								<h4>Marvin gaye <span>Special customer</span></h4>
+							</div>
+							<!-- <div class="client-img">
+								<img src="images/t2.jpg" alt="" />
+							</div> -->
+						</li>
+						<li>
+							<div class="customer-grid">
+								<p> Cras aliquam ligula id felis rhoncus facilisis. Pellentesque habitant 
+									morbi tristique senectus et netus et malesuada fames ac turpis egestas.  
+									Donec auctor magna id purus lacinia hendrerit.</p>
+								<h4>Jawel Slash <span>Recent visitor</span></h4>
+							</div>
+							<!-- <div class="client-img">
+								<img src="images/t3.jpg" alt="" />
+							</div> -->
+						</li>
+						<li>
+							<div class="customer-grid">
+								<p> Cras aliquam ligula id felis rhoncus facilisis. Pellentesque habitant 
+									morbi tristique senectus et netus et malesuada fames ac turpis egestas.  
+									Donec auctor magna id purus lacinia hendrerit.</p>
+								<h4>Jawel Slash <span>Recent visitor</span></h4>
+							</div>
+							<!-- <div class="client-img">
+								<img src="images/t3.jpg" alt="" />
+							</div> -->
+						</li>
+					</ul>
+					<script type="text/javascript">
+								$(window).load(function() {
+									$("#flexiselDemo1").flexisel({
+										visibleItems: 3,
+										animationSpeed: 1000,
+										autoPlay: true,
+										autoPlaySpeed: 3000,    		
+										pauseOnHover: true,
+										enableResponsiveBreakpoints: true,
+										responsiveBreakpoints: { 
+											portrait: { 
+												changePoint:480,
+												visibleItems: 1
+											}, 
+											landscape: { 
+												changePoint:640,
+												visibleItems:3
+											},
+											tablet: { 
+												changePoint:768,
+												visibleItems: 3
+											}
+										}
+									});
+									
+								});
+						</script>
+						<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //customer -->
+
+
+		
+	<!-- contact form -->
+		<div class="contact-w3ls" id="contact">
+			<div class="container">
+				<h3>contact form</h3>
+					<form action="#" method="post">
+						<div class="col-md-5 col-sm-5 contact-left agileits-w3layouts">
+						
+							<div class="form-control"> 
+								<label class="header">Full Name <span>:</span></label>
+								<input type="text" name="First Name" placeholder="Name" required="">
+							</div>
+							
+							<div class="form-control"> 
+								<label class="header">Email <span>:</span></label>
+								<input type="email"  class="email" name="Email" placeholder="Email" required="">
+							</div>
+							
+							<div class="form-control">
+								<label class="header">Mobile Number <span>:</span></label>
+								<input type="text" name="Number" placeholder="Mobile Number" required="">
+							</div>	
+							
+						</div> 
+						<div class="col-md-7 col-sm-7 contact-right agileits-w3layouts">
+							<div class="form-control">
+								<label class="header">Message <span>:</span></label>
+								<textarea name="Message" placeholder="Message" required=""></textarea>
+							</div>	
+						<div class="clearfix"> </div> 
+						</div>
+							<input type="submit" value="Send">
+					</form>
+			</div>  
+		</div>  
+	<!-- //contact form -->
+
+
+	<!-- Defolt Javascript -->
+		<script src="js/jarallax.js"></script>
+		<script src="js/SmoothScroll.min.js"></script>
+		<script type="text/javascript">
+			/* init Jarallax */
+			$('.jarallax').jarallax({
+				speed: 0.5,
+				imgWidth: 1366,
+				imgHeight: 768
+			})
+		</script>
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<!-- here stars scrolling icon -->
+		<script type="text/javascript">
+			$(document).ready(function() {
+									
+				$().UItoTop({ easingType: 'easeOutQuart' });
+									
+				});
+		</script>
+	<!-- //here ends scrolling icon -->
+
+
+	<!-- Date-Picker-JavaScript -->
+		<script src="js/jquery-ui.js"></script>
+		<script>
+			$(function() {
+				$( "#datepicker,#datepicker1,#datepicker2" ).datepicker();
+			});
+		</script>
+	<!-- //Date-Picker-JavaScript -->
+
+	<!-- banner text effect js file -->
+			<script src="js/modernizr.custom.72111.js"></script>
+	<!-- banner text effect js file -->
+
+
+</body>
+<!-- //Body -->
+
+</html>
